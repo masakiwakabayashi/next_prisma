@@ -1,6 +1,6 @@
 import { prisma } from "@/lib/prisma";
-import { TodoList } from "@/components/TodoList";
-import { AddTodoForm } from "@/components/AddTodoForm";
+import { TodoList } from "@/components/Todo/TodoList";
+import { AddTodoForm } from "@/components/Todo/AddTodoForm";
 
 export default async function Home() {
   const todos = await prisma.todo.findMany({
